@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/activity_map.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/activity_map.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/activity_user_profile.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/activity_user_profile.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/activity_main_sign_up.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/activity_main_sign_up.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/activity_alarm.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/activity_alarm.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/item_task.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/item_task.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/activity_timer.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/activity_timer.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/fragment_weather.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/fragment_weather.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/fragment_calendar.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/fragment_calendar.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/activity_main.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/activity_main.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/activity_show_task.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/activity_show_task.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/fragment_task.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/fragment_task.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/activity_update_task.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/activity_update_task.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/dialog_finish_timer.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/dialog_finish_timer.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/activity_login.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/activity_login.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/activity_create_task.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/activity_create_task.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/item_event.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/item_event.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/activity_facebook.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/activity_facebook.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/activity_sign_up.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/activity_sign_up.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/dialog_set_time.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/dialog_set_time.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/activity_notifications.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/activity_notifications.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/dialog_reset_password.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/dialog_reset_password.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/dialog_reset_password1.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/dialog_reset_password1.xml"
+    }
+]
