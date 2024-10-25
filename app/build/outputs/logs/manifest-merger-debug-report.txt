@@ -302,10 +302,10 @@ activity#vn.edu.tlu.nhom7.calendar.activity.map.MapActivity
 ADDED from C:\CSE441_PROJECT\app\src\main\AndroidManifest.xml:40:9-62
 	android:name
 		ADDED from C:\CSE441_PROJECT\app\src\main\AndroidManifest.xml:40:19-59
-activity#vn.edu.tlu.nhom7.calendar.activity.TimerActivity
-ADDED from C:\CSE441_PROJECT\app\src\main\AndroidManifest.xml:41:9-60
+activity#vn.edu.tlu.nhom7.calendar.activity.timer.TimerActivity
+ADDED from C:\CSE441_PROJECT\app\src\main\AndroidManifest.xml:41:9-66
 	android:name
-		ADDED from C:\CSE441_PROJECT\app\src\main\AndroidManifest.xml:41:19-57
+		ADDED from C:\CSE441_PROJECT\app\src\main\AndroidManifest.xml:41:19-63
 activity#vn.edu.tlu.nhom7.calendar.activity.notification.NotificationActivity
 ADDED from C:\CSE441_PROJECT\app\src\main\AndroidManifest.xml:42:9-44:40
 	android:exported

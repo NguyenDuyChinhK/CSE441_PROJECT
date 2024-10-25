@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/nav_home"
+        android:title="Trang Chủ" />
+    <item
+        android:id="@+id/nav_taskManager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/nav_task"
+        android:title="Việc Cần Làm" />
+    <item
+        android:id="@+id/nav_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/nav_weather"
+        android:title="Thời Tiết" />
+    <item
+        android:id="@+id/nav_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/nav_alarm"
+        android:title="Báo Thức" />
+    <item
+        android:id="@+id/nav_map"
+        android:icon="@drawable/nav_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Bản Đồ" />
+</menu>

@@ -165,9 +165,9 @@
 89        <activity android:name="vn.edu.tlu.nhom7.calendar.activity.map.MapActivity" />
 89-->C:\CSE441_PROJECT\app\src\main\AndroidManifest.xml:40:9-62
 89-->C:\CSE441_PROJECT\app\src\main\AndroidManifest.xml:40:19-59
-90        <activity android:name="vn.edu.tlu.nhom7.calendar.activity.TimerActivity" />
-90-->C:\CSE441_PROJECT\app\src\main\AndroidManifest.xml:41:9-60
-90-->C:\CSE441_PROJECT\app\src\main\AndroidManifest.xml:41:19-57
+90        <activity android:name="vn.edu.tlu.nhom7.calendar.activity.timer.TimerActivity" />
+90-->C:\CSE441_PROJECT\app\src\main\AndroidManifest.xml:41:9-66
+90-->C:\CSE441_PROJECT\app\src\main\AndroidManifest.xml:41:19-63
 91        <activity
 91-->C:\CSE441_PROJECT\app\src\main\AndroidManifest.xml:42:9-44:40
 92            android:name="vn.edu.tlu.nhom7.calendar.activity.notification.NotificationActivity"

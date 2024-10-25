@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+array music_array
 color black
 color color_hightlighBlue
 color color_hightlighEvent
@@ -35,8 +36,11 @@ drawable gradient_background
 drawable home_boder_date
 drawable ic_alarm_notifications
 drawable ic_back_24
+drawable ic_folder
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_pause
+drawable ic_play
 drawable ic_stop
 drawable ic_task_add
 drawable ic_task_alarm
@@ -49,6 +53,7 @@ drawable ic_task_clock
 drawable ic_task_location
 drawable ic_task_menu
 drawable ic_timer
+drawable icstop
 drawable img
 drawable linkedin
 drawable lock_24
@@ -84,9 +89,10 @@ id btn_Phone_SU
 id btn_SignUp
 id btn_cancel
 id btn_confirm
+id btn_pause
+id btn_play
 id btn_set_alarm
 id btn_set_time
-id btn_start_reset
 id btn_stop
 id btn_stop_alarm
 id btnlogOutUser
@@ -164,6 +170,7 @@ id spColor
 id space
 id space2
 id spinner_cities
+id spinner_music
 id sw_Login
 id taskRecycler
 id textView
@@ -235,6 +242,7 @@ menu toolbar_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 raw alarm_sound
+raw iphone_alarm_ring
 raw nevergonnagiveyouup
 raw whitenight
 string app_name

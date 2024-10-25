@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/Theme.Calendar"
+        tools:targetApi="31">
+
+        <!-- Đăng ký các receiver -->
+        <receiver android:name=".activity.notification.NotificationReceiver" />
+        <receiver android:name=".activity.alarm.AlarmReceiver" />
+        <receiver android:name=".activity.TimerActivity$NotificationReceiver" />
+
+        <!-- Đăng ký dịch vụ -->
+        <service android:name=".TimerService" />
+
+        <!-- Đăng ký các activity -->
+        <activity android:name=".activity.MainActivity" android:exported="false" />
+        <activity android:name=".activity.alarm.AlarmActivity" />
+        <activity android:name=".activity.map.MapActivity" />
+        <activity android:name=".activity.timer.TimerActivity" />
+        <activity
+            android:name=".activity.notification.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.notification.NotificationHelper"
+            android:exported="false" />
+        <activity
+            android:name=".activity.task.CreateTaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.task.ShowTaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.task.TaskFragment"
+            android:exported="false" />
+        <activity
+            android:name=".activity.task.UpdateTaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.Login"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.Sign_Up"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.UserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.MainSignUp"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

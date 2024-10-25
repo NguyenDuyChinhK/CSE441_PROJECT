@@ -76,6 +76,7 @@ int animator mtrl_fab_hide_motion_spec 0x7f02001e
 int animator mtrl_fab_show_motion_spec 0x7f02001f
 int animator mtrl_fab_transformation_sheet_collapse_spec 0x7f020020
 int animator mtrl_fab_transformation_sheet_expand_spec 0x7f020021
+int array music_array 0x7f150000
 int attr SharedValue 0x7f030000
 int attr SharedValueId 0x7f030001
 int attr actionBarDivider 0x7f030002
@@ -3205,6 +3206,7 @@ int drawable ic_call_decline 0x7f0700d1
 int drawable ic_call_decline_low 0x7f0700d2
 int drawable ic_clear_black_24 0x7f0700d3
 int drawable ic_clock_black_24dp 0x7f0700d4
+int drawable ic_folder 0x7f07016e
 int drawable ic_keyboard_black_24dp 0x7f0700d5
 int drawable ic_launcher_background 0x7f0700d6
 int drawable ic_launcher_foreground 0x7f0700d7
@@ -3222,6 +3224,8 @@ int drawable ic_mtrl_chip_close_circle 0x7f0700e2
 int drawable ic_other_sign_in 0x7f0700e3
 int drawable ic_passkey 0x7f0700e4
 int drawable ic_password 0x7f0700e5
+int drawable ic_pause 0x7f07016f
+int drawable ic_play 0x7f070170
 int drawable ic_search_black_24 0x7f0700e6
 int drawable ic_stop 0x7f0700e7
 int drawable ic_task_add 0x7f0700e8
@@ -3235,6 +3239,7 @@ int drawable ic_task_clock 0x7f0700ef
 int drawable ic_task_location 0x7f0700f0
 int drawable ic_task_menu 0x7f0700f1
 int drawable ic_timer 0x7f0700f2
+int drawable icstop 0x7f070171
 int drawable img 0x7f0700f3
 int drawable indeterminate_static 0x7f0700f4
 int drawable linkedin 0x7f0700f5
@@ -3482,9 +3487,10 @@ int id btn_Phone_SU 0x7f080078
 int id btn_SignUp 0x7f080079
 int id btn_cancel 0x7f08007a
 int id btn_confirm 0x7f08007b
+int id btn_pause 0x7f0802c2
+int id btn_play 0x7f0802c4
 int id btn_set_alarm 0x7f08007c
 int id btn_set_time 0x7f08007d
-int id btn_start_reset 0x7f08007e
 int id btn_stop 0x7f08007f
 int id btn_stop_alarm 0x7f080080
 int id btnlogOutUser 0x7f080081
@@ -3916,6 +3922,7 @@ int id space2 0x7f08022a
 int id spacer 0x7f08022b
 int id special_effects_controller_view_tag 0x7f08022c
 int id spinner_cities 0x7f08022d
+int id spinner_music 0x7f0802c0
 int id spline 0x7f08022e
 int id split_action_bar 0x7f08022f
 int id spread 0x7f080230
@@ -4308,6 +4315,7 @@ int mipmap ic_launcher_round 0x7f0e0001
 int plurals mtrl_badge_content_description 0x7f0f0000
 int raw alarm_sound 0x7f100000
 int raw firebase_common_keep 0x7f100001
+int raw iphone_alarm_ring 0x7f100004
 int raw nevergonnagiveyouup 0x7f100002
 int raw whitenight 0x7f100003
 int string abc_action_bar_home_description 0x7f110000

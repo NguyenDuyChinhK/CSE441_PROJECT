@@ -5,7 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,19 +23,32 @@ public final class ActivityTimerBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final ImageButton btnPause;
+
+  @NonNull
+  public final ImageButton btnPlay;
+
+  @NonNull
   public final Button btnSetTime;
 
   @NonNull
-  public final Button btnStartReset;
+  public final ImageButton btnStop;
+
+  @NonNull
+  public final Spinner spinnerMusic;
 
   @NonNull
   public final TextView tvTimer;
 
-  private ActivityTimerBinding(@NonNull LinearLayout rootView, @NonNull Button btnSetTime,
-      @NonNull Button btnStartReset, @NonNull TextView tvTimer) {
+  private ActivityTimerBinding(@NonNull LinearLayout rootView, @NonNull ImageButton btnPause,
+      @NonNull ImageButton btnPlay, @NonNull Button btnSetTime, @NonNull ImageButton btnStop,
+      @NonNull Spinner spinnerMusic, @NonNull TextView tvTimer) {
     this.rootView = rootView;
+    this.btnPause = btnPause;
+    this.btnPlay = btnPlay;
     this.btnSetTime = btnSetTime;
-    this.btnStartReset = btnStartReset;
+    this.btnStop = btnStop;
+    this.spinnerMusic = spinnerMusic;
     this.tvTimer = tvTimer;
   }
 
@@ -64,15 +79,33 @@ public final class ActivityTimerBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_pause;
+      ImageButton btnPause = ViewBindings.findChildViewById(rootView, id);
+      if (btnPause == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_play;
+      ImageButton btnPlay = ViewBindings.findChildViewById(rootView, id);
+      if (btnPlay == null) {
+        break missingId;
+      }
+
       id = R.id.btn_set_time;
       Button btnSetTime = ViewBindings.findChildViewById(rootView, id);
       if (btnSetTime == null) {
         break missingId;
       }
 
-      id = R.id.btn_start_reset;
-      Button btnStartReset = ViewBindings.findChildViewById(rootView, id);
-      if (btnStartReset == null) {
+      id = R.id.btn_stop;
+      ImageButton btnStop = ViewBindings.findChildViewById(rootView, id);
+      if (btnStop == null) {
+        break missingId;
+      }
+
+      id = R.id.spinner_music;
+      Spinner spinnerMusic = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerMusic == null) {
         break missingId;
       }
 
@@ -82,7 +115,8 @@ public final class ActivityTimerBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityTimerBinding((LinearLayout) rootView, btnSetTime, btnStartReset, tvTimer);
+      return new ActivityTimerBinding((LinearLayout) rootView, btnPause, btnPlay, btnSetTime,
+          btnStop, spinnerMusic, tvTimer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="music_array">
+        <item>Never Gonna Give You Up</item>
+        <item>White Night</item>
+        <item>Iphone Alarm</item>
+
+    </string-array>
     <color name="black">#FF000000</color>
     <color name="color_hightlighBlue">#735bf2</color>
     <color name="color_hightlighEvent">#FF8400</color>

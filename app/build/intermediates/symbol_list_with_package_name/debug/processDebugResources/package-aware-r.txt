@@ -77,6 +77,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array music_array
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -3206,6 +3207,7 @@ drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_folder
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -3223,6 +3225,8 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_other_sign_in
 drawable ic_passkey
 drawable ic_password
+drawable ic_pause
+drawable ic_play
 drawable ic_search_black_24
 drawable ic_stop
 drawable ic_task_add
@@ -3236,6 +3240,7 @@ drawable ic_task_clock
 drawable ic_task_location
 drawable ic_task_menu
 drawable ic_timer
+drawable icstop
 drawable img
 drawable indeterminate_static
 drawable linkedin
@@ -3483,9 +3488,10 @@ id btn_Phone_SU
 id btn_SignUp
 id btn_cancel
 id btn_confirm
+id btn_pause
+id btn_play
 id btn_set_alarm
 id btn_set_time
-id btn_start_reset
 id btn_stop
 id btn_stop_alarm
 id btnlogOutUser
@@ -3917,6 +3923,7 @@ id space2
 id spacer
 id special_effects_controller_view_tag
 id spinner_cities
+id spinner_music
 id spline
 id split_action_bar
 id spread
@@ -4309,6 +4316,7 @@ mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 raw alarm_sound
 raw firebase_common_keep
+raw iphone_alarm_ring
 raw nevergonnagiveyouup
 raw whitenight
 string abc_action_bar_home_description

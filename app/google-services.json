@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "862613177597",
+    "project_id": "calendar-82deb",
+    "storage_bucket": "calendar-82deb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862613177597:android:efa06dbd6961c8d41e6a94",
+        "android_client_info": {
+          "package_name": "vn.edu.tlu.nhom7.calendar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrv4rk5IYy6FLHQBZQTQO-HMNwOb8AeOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -87,7 +87,7 @@
             android:exported="false" />
         <activity android:name="vn.edu.tlu.nhom7.calendar.activity.alarm.AlarmActivity" />
         <activity android:name="vn.edu.tlu.nhom7.calendar.activity.map.MapActivity" />
-        <activity android:name="vn.edu.tlu.nhom7.calendar.activity.TimerActivity" />
+        <activity android:name="vn.edu.tlu.nhom7.calendar.activity.timer.TimerActivity" />
         <activity
             android:name="vn.edu.tlu.nhom7.calendar.activity.notification.NotificationActivity"
             android:exported="false" />
