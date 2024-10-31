@@ -32,6 +32,9 @@ public final class ActivityTimerBinding implements ViewBinding {
   public final Button btnSetTime;
 
   @NonNull
+  public final Button btnStartReset;
+
+  @NonNull
   public final ImageButton btnStop;
 
   @NonNull
@@ -41,12 +44,13 @@ public final class ActivityTimerBinding implements ViewBinding {
   public final TextView tvTimer;
 
   private ActivityTimerBinding(@NonNull LinearLayout rootView, @NonNull ImageButton btnPause,
-      @NonNull ImageButton btnPlay, @NonNull Button btnSetTime, @NonNull ImageButton btnStop,
-      @NonNull Spinner spinnerMusic, @NonNull TextView tvTimer) {
+      @NonNull ImageButton btnPlay, @NonNull Button btnSetTime, @NonNull Button btnStartReset,
+      @NonNull ImageButton btnStop, @NonNull Spinner spinnerMusic, @NonNull TextView tvTimer) {
     this.rootView = rootView;
     this.btnPause = btnPause;
     this.btnPlay = btnPlay;
     this.btnSetTime = btnSetTime;
+    this.btnStartReset = btnStartReset;
     this.btnStop = btnStop;
     this.spinnerMusic = spinnerMusic;
     this.tvTimer = tvTimer;
@@ -97,6 +101,12 @@ public final class ActivityTimerBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btn_start_reset;
+      Button btnStartReset = ViewBindings.findChildViewById(rootView, id);
+      if (btnStartReset == null) {
+        break missingId;
+      }
+
       id = R.id.btn_stop;
       ImageButton btnStop = ViewBindings.findChildViewById(rootView, id);
       if (btnStop == null) {
@@ -116,7 +126,7 @@ public final class ActivityTimerBinding implements ViewBinding {
       }
 
       return new ActivityTimerBinding((LinearLayout) rootView, btnPause, btnPlay, btnSetTime,
-          btnStop, spinnerMusic, tvTimer);
+          btnStartReset, btnStop, spinnerMusic, tvTimer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

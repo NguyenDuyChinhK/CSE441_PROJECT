@@ -76,9 +76,8 @@
         <!-- Đăng ký các receiver -->
         <receiver android:name="vn.edu.tlu.nhom7.calendar.activity.notification.NotificationReceiver" />
         <receiver android:name="vn.edu.tlu.nhom7.calendar.activity.alarm.AlarmReceiver" />
-        <receiver android:name="vn.edu.tlu.nhom7.calendar.activity.TimerActivity$NotificationReceiver" />
+        <receiver android:name="vn.edu.tlu.nhom7.calendar.activity.timer.TimerActivity$NotificationReceiver" />
 
-        <!-- Đăng ký dịch vụ -->
         <service android:name="vn.edu.tlu.nhom7.calendar.TimerService" />
 
         <!-- Đăng ký các activity -->

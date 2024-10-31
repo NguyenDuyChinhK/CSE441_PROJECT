@@ -17,12 +17,19 @@ import androidx.appcompat.widget.Toolbar;
 import java.util.Locale;
 import vn.edu.tlu.nhom7.calendar.R;
 
+
+
+import java.util.Locale;
+
+
 public class TimerActivity extends AppCompatActivity {
     private static final long DEFAULT_TIME_IN_MILLIS = 60000;
     private Button btnSetTime;
     private ImageButton btnPlay, btnPause, btnStop;
     private TextView tvTimer;
+
     private Spinner spinnerMusic;
+
     private CountDownTimer countDownTimer;
     private boolean isRunning = false;
     private long timeLeftInMillis = 0;
@@ -38,14 +45,12 @@ public class TimerActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
         tvTimer = findViewById(R.id.tv_timer);
         btnPlay = findViewById(R.id.btn_play);
         btnPause = findViewById(R.id.btn_pause);
         btnStop = findViewById(R.id.btn_stop);
         spinnerMusic = findViewById(R.id.spinner_music);
         btnSetTime = findViewById(R.id.btn_set_time);
-
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.music_array, android.R.layout.simple_spinner_item);
@@ -56,12 +61,18 @@ public class TimerActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
                     case 0:
-                        selectedMusicResId = R.raw.nevergonnagiveyouup;
+                        selectedMusicResId = R.raw.digital_alarm_clock;
                         break;
                     case 1:
-                        selectedMusicResId = R.raw.whitenight;
+                        selectedMusicResId = R.raw.super_idol;
                         break;
                     case 2:
+                        selectedMusicResId = R.raw.samsung_alarm_sound;
+                        break;
+                    case 3:
+                        selectedMusicResId = R.raw.nevergonnagiveyouup;
+                        break;
+                    case 4:
                         selectedMusicResId = R.raw.iphone_alarm_ring;
                         break;
                 }
@@ -71,10 +82,8 @@ public class TimerActivity extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {}
         });
 
-
         timeLeftInMillis = selectedTimeInMillis;
         updateTimerUI();
-
 
         btnSetTime.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,6 +108,12 @@ public class TimerActivity extends AppCompatActivity {
         numberPickerMinutes.setMaxValue(59);
         numberPickerSeconds.setMinValue(0);
         numberPickerSeconds.setMaxValue(59);
+
+        // Thiết lập giá trị mặc định cho NumberPicker
+        numberPickerHours.setValue((int) (selectedTimeInMillis / 3600000));
+        numberPickerMinutes.setValue((int) ((selectedTimeInMillis % 3600000) / 60000));
+        numberPickerSeconds.setValue((int) ((selectedTimeInMillis % 60000) / 1000));
+
         dialog.findViewById(R.id.btn_confirm).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -111,21 +126,33 @@ public class TimerActivity extends AppCompatActivity {
                 dialog.dismiss();
             }
         });
-        dialog.findViewById(R.id.btn_cancel).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.dismiss();
-            }
-        });
+
+        dialog.findViewById(R.id.btn_cancel).setOnClickListener(v -> dialog.dismiss());
         dialog.show();
+
+            // Nút hủy
+            Button btnCancel = dialog.findViewById(R.id.btn_cancel);
+             btnCancel.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    dialog.dismiss(); // Đóng dialog mà không cập nhật thời gian
+                }
+        });
+
+        dialog.show();
+
     }
 
     private void startTimer() {
+        if (selectedTimeInMillis <= 0) {
+            return; // Không làm gì nếu thời gian đã đặt là 0
+        }
+
         if (timeLeftInMillis == 0) {
             timeLeftInMillis = selectedTimeInMillis;
         }
 
-        countDownTimer = new CountDownTimer(timeLeftInMillis, 1000) {
+        countDownTimer = new CountDownTimer(timeLeftInMillis, 500) {
             @Override
             public void onTick(long millisUntilFinished) {
                 timeLeftInMillis = millisUntilFinished;
@@ -138,6 +165,10 @@ public class TimerActivity extends AppCompatActivity {
                 showFinishDialog();
                 playSound();
                 resetTimer();
+
+                btnPlay.setVisibility(View.VISIBLE);
+                btnPause.setVisibility(View.GONE);
+                btnStop.setVisibility(View.GONE);
             }
         }.start();
 

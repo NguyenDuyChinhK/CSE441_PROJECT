@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="music_array">
+        <item>Clock</item>
+        <item>Super Idol</item>
+        <item>Samsung </item>
         <item>Never Gonna Give You Up</item>
-        <item>White Night</item>
-        <item>Iphone Alarm</item>
+        <item>Iphone</item>
 
     </string-array>
     <color name="black">#FF000000</color>
@@ -30,6 +32,8 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDrv4rk5IYy6FLHQBZQTQO-HMNwOb8AeOY</string>
     <string name="google_storage_bucket" translatable="false">calendar-82deb.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_close">Đóng menu</string>
+    <string name="navigation_drawer_open">Mở menu</string>
     <string name="project_id" translatable="false">calendar-82deb</string>
     <style name="Base.Theme.Calendar" parent="Theme.Material3.DayNight.NoActionBar">
         

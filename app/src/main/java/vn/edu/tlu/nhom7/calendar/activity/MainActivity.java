@@ -5,53 +5,70 @@ import android.app.NotificationManager;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.MenuItem;
-import android.widget.FrameLayout;
 import android.view.Menu;
-import androidx.activity.EdgeToEdge;
+import android.view.MenuItem;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
 
 import vn.edu.tlu.nhom7.calendar.R;
 import vn.edu.tlu.nhom7.calendar.activity.alarm.AlarmActivity;
 import vn.edu.tlu.nhom7.calendar.activity.home.CalendarFragment;
-import vn.edu.tlu.nhom7.calendar.activity.task.CreateTaskActivity;
+
 import vn.edu.tlu.nhom7.calendar.activity.task.TaskFragment;
 import vn.edu.tlu.nhom7.calendar.activity.timer.TimerActivity;
 
+
+import vn.edu.tlu.nhom7.calendar.activity.map.MapActivity;
+
 import vn.edu.tlu.nhom7.calendar.activity.user.UserProfile;
 import vn.edu.tlu.nhom7.calendar.activity.weather.WeatherFragment;
-import vn.edu.tlu.nhom7.calendar.activity.map.MapActivity;
-import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String CHANNEL_ID = "1";
 
-    private BottomNavigationView bottomNavigationView;
-    private FrameLayout frameLayout;
+    public static final String CHANNEL_ID = "1";
+    private DrawerLayout drawerLayout;
+    private NavigationView navigationView;
     private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
         // Thiết lập Toolbar
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        bottomNavigationView = findViewById(R.id.bottomNavView);
-        frameLayout = findViewById(R.id.frameLayout);
+        // Thiết lập DrawerLayout và NavigationView
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.nav_view);
 
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawerLayout, toolbar,
+                R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+        // Xử lý sự kiện chọn menu trong NavigationView
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                handleNavigationItemSelected(item);
+                drawerLayout.closeDrawer(GravityCompat.START);
+                return true;
+            }
+        });
+
+        // Kiểm tra nếu có dữ liệu truyền vào Intent
         if (getIntent().hasExtra("key_task")) {
             loadFragment(new TaskFragment(), false);
             getIntent().removeExtra("key_task");
@@ -59,34 +76,25 @@ public class MainActivity extends AppCompatActivity {
             loadFragment(new CalendarFragment(), false);
         }
 
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int itemId = item.getItemId();
-                if (itemId == R.id.nav_home) {
-                    loadFragment(new CalendarFragment(), false);
-                } else if (itemId == R.id.nav_taskManager) {
-                    loadFragment(new TaskFragment(), false);
-                } else if (itemId == R.id.nav_userProfile) {
-                    Intent intent = new Intent(MainActivity.this, UserProfile.class);
-                    startActivity(intent);
-                    finish();
-                } else if (itemId == R.id.nav_weather) {
-                    loadFragment(new WeatherFragment(), false);
-                } else if (itemId == R.id.nav_alarm) {
-                    Intent intent = new Intent(MainActivity.this, AlarmActivity.class);
-                    startActivity(intent);
-                    return true; // Ngăn việc xử lý thêm
-                } else if (itemId == R.id.nav_map) {  // Xử lý mở MapActivity
-                    Intent intent = new Intent(MainActivity.this, MapActivity.class);
-                    startActivity(intent);
-                    return true;
-                }
-                return true;
-            }
-        });
-
         createNotificationChannel();
+    }
+
+    private void handleNavigationItemSelected(MenuItem item) {
+        int itemId = item.getItemId();
+        if (itemId == R.id.nav_home) {
+            loadFragment(new CalendarFragment(), false);
+        } else if (itemId == R.id.nav_taskManager) {
+            loadFragment(new TaskFragment(), false);
+        } else if (itemId == R.id.nav_userProfile) {
+            startActivity(new Intent(this, UserProfile.class));
+            finish();
+        } else if (itemId == R.id.nav_weather) {
+            loadFragment(new WeatherFragment(), false);
+        } else if (itemId == R.id.nav_alarm) {
+            startActivity(new Intent(this, AlarmActivity.class));
+        } else if (itemId == R.id.nav_map) {
+            startActivity(new Intent(this, MapActivity.class));
+        }
     }
 
     @Override
@@ -97,15 +105,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.nav_userProfile) {
-
-            Intent intent = new Intent(MainActivity.this, UserProfile.class);
-            startActivity(intent);
-            return true;
-        } else if (id == R.id.action_timer) {
-            Intent intent = new Intent(MainActivity.this, TimerActivity.class);
-            startActivity(intent);
+        if (item.getItemId() == R.id.action_timer) {
+            startActivity(new Intent(this, TimerActivity.class));
             return true;
         }
         return super.onOptionsItemSelected(item);

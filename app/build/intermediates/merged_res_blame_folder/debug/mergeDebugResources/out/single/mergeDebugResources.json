@@ -8,12 +8,12 @@
         "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\drawable\\ic_task_alarm.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\drawable_ic_task_cl_blue.xml.flat",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\drawable\\ic_task_cl_blue.xml"
-    },
-    {
         "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\drawable_ic_task_cl_blue.xml.flat",
+        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\drawable\\ic_task_cl_blue.xml"
     },
     {
         "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\layout_activity_update_task.xml.flat",
@@ -22,6 +22,10 @@
     {
         "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\drawable_custom_btn_2.xml.flat",
         "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\drawable\\custom_btn_2.xml"
+    },
+    {
+        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\raw_super_idol.mp3.flat",
+        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\raw\\super_idol.mp3"
     },
     {
         "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\xml_network_security_config.xml.flat",
@@ -96,6 +100,10 @@
         "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\drawable\\ic_launcher_background.xml"
     },
     {
+        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\menu_navigation_menu.xml.flat",
+        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\menu\\navigation_menu.xml"
+    },
+    {
         "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\drawable_custom_edt.xml.flat",
         "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\drawable\\custom_edt.xml"
     },
@@ -146,6 +154,10 @@
     {
         "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\drawable_gradient_background.xml.flat",
         "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\drawable\\gradient_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\raw_digital_alarm_clock.mp3.flat",
+        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\raw\\digital_alarm_clock.mp3"
     },
     {
         "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\drawable_spinner_background.xml.flat",
@@ -232,10 +244,6 @@
         "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "vn.edu.tlu.nhom7.calendar.app-debug-5:/layout_activity_timer.xml.flat",
-        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/activity_timer.xml"
-    },
-    {
         "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\drawable_google_plus.png.flat",
         "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\drawable\\google_plus.png"
     },
@@ -300,6 +308,10 @@
         "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-debug-5:/drawable_ic_notifications.xml.flat",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/drawable/ic_notifications.xml"
+    },
+    {
         "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\drawable_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\drawable\\ic_launcher_foreground.xml"
     },
@@ -328,10 +340,6 @@
         "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\activity_create_task.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\drawable_ic_folder.xml.flat",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\drawable\\ic_folder.xml"
-    },
-    {
         "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\drawable_custom_btn.xml.flat",
         "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\drawable\\custom_btn.xml"
     },
@@ -350,6 +358,10 @@
     {
         "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\drawable_nav_user.xml.flat",
         "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\drawable\\nav_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\raw_samsung_alarm_sound.mp3.flat",
+        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\raw\\samsung_alarm_sound.mp3"
     },
     {
         "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\layout_dialog_finish_timer.xml.flat",
@@ -394,6 +406,10 @@
     {
         "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\drawable_ic_user_location.png.flat",
+        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\drawable\\ic_user_location.png"
     },
     {
         "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-debug-5:\\raw_nevergonnagiveyouup.mp3.flat",

@@ -26,7 +26,6 @@ import com.prolificinteractive.materialcalendarview.DayViewFacade;
 import vn.edu.tlu.nhom7.calendar.R;
 import vn.edu.tlu.nhom7.calendar.adapter.EventAdapter;
 import vn.edu.tlu.nhom7.calendar.model.Event;
-import vn.edu.tlu.nhom7.calendar.model.Task;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -43,6 +42,7 @@ public class CalendarFragment extends Fragment {
     private RecyclerView recyclerView;
     private EventAdapter eventAdapter;
     private List<Event> eventList;
+    private List<Event> lunarEventList;
     private List<Event> filteredEventList;
 
     public CalendarFragment() {
@@ -90,6 +90,7 @@ public class CalendarFragment extends Fragment {
         });
 
         loadEventData();
+        loadLunarEventData();
         filteredEventList = new ArrayList<>();
         eventAdapter = new EventAdapter(filteredEventList);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -99,6 +100,7 @@ public class CalendarFragment extends Fragment {
 
         try {
             highlightDates(eventList);
+            highlightLunarDates(lunarEventList);
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }
@@ -121,10 +123,9 @@ public class CalendarFragment extends Fragment {
         chineseCalendar.setTimeInMillis(calendar.getTimeInMillis());
 
         int lunarYear = chineseCalendar.get(ChineseCalendar.EXTENDED_YEAR) - 2637;
-        int lunarMonth = chineseCalendar.get(ChineseCalendar.MONTH) + 1; // Add 1 because MONTH is 0-based
+        int lunarMonth = chineseCalendar.get(ChineseCalendar.MONTH) + 1;
         int lunarDay = chineseCalendar.get(ChineseCalendar.DAY_OF_MONTH);
         boolean isLeapMonth = chineseCalendar.get(ChineseCalendar.IS_LEAP_MONTH) == 1;
-
 
         String lunarDate = (isLeapMonth ? "Leap " : "") + lunarDay + "/" + lunarMonth + "/" + lunarYear;
 
@@ -160,10 +161,21 @@ public class CalendarFragment extends Fragment {
         eventList.add(new Event("22/12", "Ngày thành lập Quân đội Nhân dân Việt Nam"));
     }
 
+    private void loadLunarEventData() {
+        lunarEventList = new ArrayList<>();
+        lunarEventList.add(new Event("15/1", "Tết Nguyên Tiêu (Âm lịch)"));
+        lunarEventList.add(new Event("3/3", "Tết Hàn Thực (Âm lịch)"));
+        lunarEventList.add(new Event("15/4", "Lễ Phật Đản (Âm lịch)"));
+        lunarEventList.add(new Event("5/5", "Tết Đoan Ngọ (Âm lịch)"));
+        lunarEventList.add(new Event("15/7", "Tết Trung nguyên / Lễ Vu-lan (Âm lịch)"));
+        lunarEventList.add(new Event("15/8", "Tết Trung Thu (Âm lịch)"));
+        lunarEventList.add(new Event("23/12", "Ngày Đưa Ông Táo Về Trời (Âm lịch)"));
+    }
 
     private void updateEventListForSelectedMonth(CalendarDay date) {
-        int selectedMonth = date.getMonth() + 1; // Vì tháng trong CalendarDay bắt đầu từ 0
+        int selectedMonth = date.getMonth() + 1;
         filteredEventList.clear();
+
 
         for (Event event : eventList) {
             String[] parts = event.getDate().split("/");
@@ -173,8 +185,49 @@ public class CalendarFragment extends Fragment {
             }
         }
 
+
+        for (Event lunarEvent : lunarEventList) {
+            String lunarDate = lunarEvent.getDate();
+            Calendar lunarCalendar = convertLunarToSolar(lunarDate, date.getYear());
+
+            if (lunarCalendar != null) {
+                CalendarDay lunarCalendarDay = CalendarDay.from(lunarCalendar);
+                int lunarEventMonth = lunarCalendarDay.getMonth() + 1;
+
+
+                if (lunarEventMonth == selectedMonth) {
+                    filteredEventList.add(lunarEvent);
+                }
+            }
+        }
+
         eventAdapter.notifyDataSetChanged();
     }
+
+    private Calendar convertLunarToSolar(String lunarDate, int year) {
+        String[] parts = lunarDate.split("/");
+        int lunarDay = Integer.parseInt(parts[0]);
+        int lunarMonth = Integer.parseInt(parts[1]);
+
+
+        if (lunarDay < 1 || lunarDay > 30 || lunarMonth < 1 || lunarMonth > 12) {
+            throw new IllegalArgumentException("Ngày hoặc tháng âm không hợp lệ");
+        }
+
+        ChineseCalendar chineseCalendar = new ChineseCalendar();
+        chineseCalendar.set(ChineseCalendar.EXTENDED_YEAR, year + 2637);
+        chineseCalendar.set(ChineseCalendar.MONTH, lunarMonth - 1);
+        chineseCalendar.set(ChineseCalendar.DAY_OF_MONTH, lunarDay);
+
+        Calendar solarCalendar = Calendar.getInstance();
+        solarCalendar.setTimeInMillis(chineseCalendar.getTimeInMillis());
+
+
+        Log.d("Converted Date", "Lunar Date: " + lunarDate + " => Solar Date: " + solarCalendar.getTime());
+
+        return solarCalendar;
+    }
+
 
     private void highlightDates(List<Event> eventList) throws ParseException {
         for (Event event : eventList) {
@@ -185,11 +238,41 @@ public class CalendarFragment extends Fragment {
                 date = event.getDate() + "/" + year;
                 try {
                     Date eventDate = new SimpleDateFormat("dd/MM/yyyy").parse(date);
+                    CalendarDay calendarDay = CalendarDay.from(eventDate);
                     CurrentDayDecorator decorator = new CurrentDayDecorator(eventDate, color);
                     calendar.addDecorator(decorator);
                 } catch (ParseException e) {
+                    e.printStackTrace();
                 }
             }
         }
     }
+
+    private void highlightLunarDates(List<Event> lunarEventList) throws ParseException {
+        int color = ContextCompat.getColor(requireContext(), R.color.color_hightlighBlue);
+
+        for (Event lunarEvent : lunarEventList) {
+            String[] lunarDateParts = lunarEvent.getDate().split("/");
+            if (lunarDateParts.length < 2) continue;
+
+            int lunarDay = Integer.parseInt(lunarDateParts[0]);
+            int lunarMonth = Integer.parseInt(lunarDateParts[1]);
+
+            for (int year = 2020; year <= 2029; year++) {
+                ChineseCalendar chineseCalendar = new ChineseCalendar();
+                chineseCalendar.set(ChineseCalendar.EXTENDED_YEAR, year + 2637);
+                chineseCalendar.set(ChineseCalendar.MONTH, lunarMonth - 1);
+                chineseCalendar.set(ChineseCalendar.DAY_OF_MONTH, lunarDay);
+
+
+                Date lunarDate = new Date(chineseCalendar.getTimeInMillis());
+                CalendarDay calendarDay = CalendarDay.from(lunarDate);
+                CurrentDayDecorator decorator = new CurrentDayDecorator(lunarDate, color);
+                calendar.addDecorator(decorator);
+            }
+        }
+    }
+
 }
+
+

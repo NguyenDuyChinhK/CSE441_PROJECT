@@ -36,9 +36,9 @@ drawable gradient_background
 drawable home_boder_date
 drawable ic_alarm_notifications
 drawable ic_back_24
-drawable ic_folder
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_notifications
 drawable ic_pause
 drawable ic_play
 drawable ic_stop
@@ -53,6 +53,7 @@ drawable ic_task_clock
 drawable ic_task_location
 drawable ic_task_menu
 drawable ic_timer
+drawable ic_user_location
 drawable icstop
 drawable img
 drawable linkedin
@@ -77,7 +78,6 @@ id action_popup_edit
 id action_timer
 id activity_main
 id barrier
-id bottomNavView
 id btnCreateTask
 id btnDialogCancel
 id btnDialogSubmit
@@ -93,11 +93,13 @@ id btn_pause
 id btn_play
 id btn_set_alarm
 id btn_set_time
+id btn_start_reset
 id btn_stop
 id btn_stop_alarm
 id btnlogOutUser
 id calendarView
 id color
+id drawer_layout
 id edt_emailLogin
 id edt_emailSignUp
 id edt_nameSignUp
@@ -148,6 +150,7 @@ id nav_home
 id nav_map
 id nav_taskManager
 id nav_userProfile
+id nav_view
 id nav_weather
 id number_picker_hours
 id number_picker_minutes
@@ -237,14 +240,17 @@ layout fragment_weather
 layout item_event
 layout item_task
 menu bottom_nav_menu
+menu navigation_menu
 menu task_popup_menu
 menu toolbar_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 raw alarm_sound
+raw digital_alarm_clock
 raw iphone_alarm_ring
 raw nevergonnagiveyouup
-raw whitenight
+raw samsung_alarm_sound
+raw super_idol
 string app_name
 string default_web_client_id
 string facebook_app_id
@@ -256,6 +262,8 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string hello_blank_fragment
+string navigation_drawer_close
+string navigation_drawer_open
 string project_id
 style Base.Theme.Calendar
 style CustomCalendarDateTextAppearance

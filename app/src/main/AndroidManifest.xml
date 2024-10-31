@@ -29,16 +29,17 @@
         <!-- Đăng ký các receiver -->
         <receiver android:name=".activity.notification.NotificationReceiver" />
         <receiver android:name=".activity.alarm.AlarmReceiver" />
-        <receiver android:name=".activity.TimerActivity$NotificationReceiver" />
+        <receiver android:name=".activity.timer.TimerActivity$NotificationReceiver" />
 
-        <!-- Đăng ký dịch vụ -->
+
         <service android:name=".TimerService" />
 
         <!-- Đăng ký các activity -->
         <activity android:name=".activity.MainActivity" android:exported="false" />
         <activity android:name=".activity.alarm.AlarmActivity" />
         <activity android:name=".activity.map.MapActivity" />
-        <activity android:name=".activity.timer.TimerActivity" />
+        <activity android:name=".activity.timer.TimerActivity"></activity>
+
         <activity
             android:name=".activity.notification.NotificationActivity"
             android:exported="false" />
@@ -48,6 +49,7 @@
         <activity
             android:name=".activity.task.CreateTaskActivity"
             android:exported="false" />
+
         <activity
             android:name=".activity.task.ShowTaskActivity"
             android:exported="false" />
