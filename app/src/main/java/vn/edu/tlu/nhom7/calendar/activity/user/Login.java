@@ -54,8 +54,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import com.facebook.FacebookSdk;
-import com.facebook.appevents.AppEventsLogger;
+
 
 import java.util.Calendar;
 import java.util.HashMap;
@@ -129,8 +128,7 @@ public class Login extends AppCompatActivity {
         });
 
 // Face book
-        FacebookSdk.sdkInitialize(getApplicationContext());
-        AppEventsLogger.activateApp(this.getApplication());
+
 
         mapping();
 

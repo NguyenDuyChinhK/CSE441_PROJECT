@@ -24,4 +24,8 @@
         android:id="@+id/nav_userProfile"
         android:icon="@drawable/nav_user"
         android:title="Người Dùng"/>
+    <item
+        android:id="@+id/nav_worldZone"
+        android:icon="@drawable/nav_world_zone"
+        android:title="Múi giờ"/>
 </menu>

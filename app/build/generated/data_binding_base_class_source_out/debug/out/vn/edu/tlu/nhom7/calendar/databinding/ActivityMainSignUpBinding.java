@@ -23,9 +23,6 @@ public final class ActivityMainSignUpBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnFacebookSU;
-
-  @NonNull
   public final Button btnPhoneSU;
 
   @NonNull
@@ -49,12 +46,11 @@ public final class ActivityMainSignUpBinding implements ViewBinding {
   @NonNull
   public final TextView tvLogin;
 
-  private ActivityMainSignUpBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnFacebookSU, @NonNull Button btnPhoneSU, @NonNull ImageButton imbtnGoogle,
-      @NonNull ImageButton imbtnLinkdin, @NonNull ImageButton imbtnTwith, @NonNull LinearLayout ll1,
-      @NonNull LinearLayout ll2, @NonNull ConstraintLayout main, @NonNull TextView tvLogin) {
+  private ActivityMainSignUpBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnPhoneSU,
+      @NonNull ImageButton imbtnGoogle, @NonNull ImageButton imbtnLinkdin,
+      @NonNull ImageButton imbtnTwith, @NonNull LinearLayout ll1, @NonNull LinearLayout ll2,
+      @NonNull ConstraintLayout main, @NonNull TextView tvLogin) {
     this.rootView = rootView;
-    this.btnFacebookSU = btnFacebookSU;
     this.btnPhoneSU = btnPhoneSU;
     this.imbtnGoogle = imbtnGoogle;
     this.imbtnLinkdin = imbtnLinkdin;
@@ -92,12 +88,6 @@ public final class ActivityMainSignUpBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_Facebook_SU;
-      Button btnFacebookSU = ViewBindings.findChildViewById(rootView, id);
-      if (btnFacebookSU == null) {
-        break missingId;
-      }
-
       id = R.id.btn_Phone_SU;
       Button btnPhoneSU = ViewBindings.findChildViewById(rootView, id);
       if (btnPhoneSU == null) {
@@ -142,8 +132,8 @@ public final class ActivityMainSignUpBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainSignUpBinding((ConstraintLayout) rootView, btnFacebookSU, btnPhoneSU,
-          imbtnGoogle, imbtnLinkdin, imbtnTwith, ll1, ll2, main, tvLogin);
+      return new ActivityMainSignUpBinding((ConstraintLayout) rootView, btnPhoneSU, imbtnGoogle,
+          imbtnLinkdin, imbtnTwith, ll1, ll2, main, tvLogin);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

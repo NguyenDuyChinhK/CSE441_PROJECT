@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-3:/values-large-v4/values-large-v4.xml",
+            "outputFile": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-41:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\kqchi\\.gradle\\caches\\transforms-3\\b3e0350f732dcba2e4bc8427a0c64963\\transformed\\appcompat-1.6.1\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\b3e0350f732dcba2e4bc8427a0c64963\\transformed\\appcompat-1.6.1\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\kqchi\\.gradle\\caches\\transforms-3\\3643690dbf8cc33cbb4ccbf5b1e72ffa\\transformed\\material-1.12.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\3643690dbf8cc33cbb4ccbf5b1e72ffa\\transformed\\material-1.12.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

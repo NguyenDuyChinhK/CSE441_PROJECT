@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="60dp"
-        android:background="@drawable/background1">
+        android:background="@drawable/anhbackground">
     </ImageView>
 
     <LinearLayout
@@ -44,30 +44,6 @@
                 android:layout_height="30dp"
                 android:layout_width="30dp"
                 android:background="@drawable/ic_back_24"/>
-            <TextView
-                android:paddingStart="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="3"
-                android:gravity="start|bottom"
-                android:text="Hello,"
-                android:textSize="25sp"
-                android:paddingBottom="5dp"
-                android:textColor="@color/white"
-                tools:ignore="NestedWeights,RtlSymmetry">
-            </TextView>
-            <TextView
-                android:paddingStart="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="5"
-                android:gravity="start"
-                android:text="Sign Up!"
-                android:textStyle="bold"
-                android:textSize="55sp"
-                android:paddingBottom="5dp"
-                android:textColor="@color/white">
-            </TextView>
         </LinearLayout>
 
         <LinearLayout

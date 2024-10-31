@@ -65,7 +65,6 @@ dependencies {
     implementation ("com.squareup.picasso:picasso:2.8")
     implementation ("org.osmdroid:osmdroid-android:6.1.10")
     implementation ("com.google.android.gms:play-services-location:21.0.1")
-    implementation ("com.facebook.android:facebook-android-sdk:[8,9)")
     implementation ("com.google.android.gms:play-services-maps:18.1.0")
     implementation ("org.osmdroid:osmdroid-android:6.1.13")
     implementation ("androidx.appcompat:appcompat:1.6.1")

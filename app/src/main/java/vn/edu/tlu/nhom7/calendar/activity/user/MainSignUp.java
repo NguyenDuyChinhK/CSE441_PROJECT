@@ -23,19 +23,10 @@ import androidx.core.view.WindowInsetsCompat;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.CustomTarget;
 import com.bumptech.glide.request.transition.Transition;
-import com.facebook.AccessToken;
-import com.facebook.AccessTokenTracker;
-import com.facebook.CallbackManager;
-import com.facebook.FacebookActivity;
-import com.facebook.FacebookCallback;
-import com.facebook.FacebookException;
-import com.facebook.GraphRequest;
-import com.facebook.GraphResponse;
-import com.facebook.login.LoginManager;
-import com.facebook.login.LoginResult;
-import com.facebook.login.widget.LoginButton;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
@@ -59,8 +50,8 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
-import com.facebook.FacebookSdk;
-import com.facebook.appevents.AppEventsLogger;
+//import com.facebook.FacebookSdk;
+//import com.facebook.appevents.AppEventsLogger;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -80,7 +71,7 @@ import vn.edu.tlu.nhom7.calendar.activity.MainActivity;
 
 public class MainSignUp extends AppCompatActivity {
 
-    Button btn_PhoneNumber, btn_Facebook;
+    Button btn_PhoneNumber;
     ImageButton btn_Google;
     TextView btn_Login;
 
@@ -91,15 +82,15 @@ public class MainSignUp extends AppCompatActivity {
     private static  final int RC_SIGN_IN = 40;
     GoogleSignInClient googleSignInClient;
     ShapeableImageView imageView;
-    private CallbackManager mcallbackManager;
+    //    private CallbackManager mcallbackManager;
     private FirebaseAuth.AuthStateListener authStateListener;
-    private AccessTokenTracker accessTokenTracker;
+//    private AccessTokenTracker accessTokenTracker;
 
 
 
 
     private void Mapping(){
-        btn_Facebook = findViewById(R.id.btn_Facebook_SU);
+//        btn_Facebook = findViewById(R.id.btn_Facebook_SU);
         btn_PhoneNumber = findViewById(R.id.btn_Phone_SU);
         btn_Google = findViewById(R.id.imbtn_google);
         btn_Google = findViewById(R.id.imbtn_google);
@@ -111,60 +102,8 @@ public class MainSignUp extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main_sign_up);
 
-/// Fcaebook
-        FacebookSdk.sdkInitialize(getApplicationContext());
-        AppEventsLogger.activateApp(this.getApplication());
-        mcallbackManager = CallbackManager.Factory.create();
-
         Mapping();
 
-        btn_Facebook.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                LoginManager.getInstance().logInWithReadPermissions(MainSignUp.this, Arrays.asList("email", "public_profile"));
-            }
-        });
-
-        LoginManager.getInstance().registerCallback(mcallbackManager, new FacebookCallback<LoginResult>() {
-            @Override
-            public void onSuccess(LoginResult loginResult) {
-//                handleFacebookAccessToken(loginResult.getAccessToken());
-                GraphRequest request =  GraphRequest.newMeRequest(loginResult.getAccessToken(), new GraphRequest.GraphJSONObjectCallback() {
-                    @Override
-                    public void onCompleted(JSONObject object, GraphResponse response) {
-                        try {
-                            String email = object.getString("email");
-                            firebaseAuth.fetchSignInMethodsForEmail(email).addOnCompleteListener(new OnCompleteListener<SignInMethodQueryResult>() {
-                                @Override
-                                public void onComplete(@NonNull Task<SignInMethodQueryResult> task) {
-                                    if (task.getResult().getSignInMethods().isEmpty()){
-                                        Toast.makeText(MainSignUp.this, "This is unergistered account please register", Toast.LENGTH_SHORT).show();
-                                    }else {
-                                        handleFacebookAccessToken(loginResult.getAccessToken());
-                                    }
-                                }
-                            });
-                        } catch (JSONException e) {
-                            throw new RuntimeException(e);
-                        }
-                    }
-                });
-                Bundle parameters = new Bundle();
-                parameters .putString("file","email,name");
-                request.setParameters(parameters);
-                request.executeAsync();
-            }
-
-            @Override
-            public void onCancel() {
-
-            }
-
-            @Override
-            public void onError(FacebookException error) {
-
-            }
-        });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -210,18 +149,10 @@ public class MainSignUp extends AppCompatActivity {
                 }
             }
         };
-        accessTokenTracker = new AccessTokenTracker() {
-            @Override
-            protected void onCurrentAccessTokenChanged(AccessToken oldAccessToken, AccessToken currentAccessToken) {
-                if (currentAccessToken == null){
-                    firebaseAuth.signOut();
-                }
-            }
-        };
+
 
     }
 
-    // Facebook
 
 
     @Override
@@ -236,27 +167,7 @@ public class MainSignUp extends AppCompatActivity {
         firebaseAuth.removeAuthStateListener(authStateListener);
     }
 
-    private void handleFacebookAccessToken(AccessToken accessToken) {
-        final AuthCredential credential = FacebookAuthProvider.getCredential(accessToken.getToken());
-        firebaseAuth.signInWithCredential(credential).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful()) {
-                   Intent intent = new Intent(MainSignUp.this, MainActivity.class);
-                   intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
-                } else {
-                    Toast.makeText(MainSignUp.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                }
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(MainSignUp.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
 
-    // Google
     private void signIn() {
         Intent intent = googleSignInClient.getSignInIntent();
         startActivityForResult(intent,RC_SIGN_IN);
@@ -267,15 +178,15 @@ public class MainSignUp extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == RC_SIGN_IN){
-            Task<GoogleSignInAccount>task = GoogleSignIn.getSignedInAccountFromIntent(data);
-            try {
-                GoogleSignInAccount account = task.getResult(ApiException.class);
-                firebaseAuth(account.getIdToken());
-            } catch (ApiException e) {
-                e.printStackTrace();
-                Log.d("Sign Up to google", "Failed to Sign Up " + e.getMessage() );
+           Task<GoogleSignInAccount>task = GoogleSignIn.getSignedInAccountFromIntent(data);
+           try {
+               GoogleSignInAccount account = task.getResult(ApiException.class);
+               firebaseAuth(account.getIdToken());
+           } catch (ApiException e) {
+               e.printStackTrace();
+               Log.d("Sign Up to google", "Failed to Sign Up " + e.getMessage() );
             }
-        }
+       }
     }
 
     private void firebaseAuth(String idToken) {

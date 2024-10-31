@@ -1,94 +1,110 @@
 [
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\activity_login.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\fragment_weather.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\fragment_weather.xml"
     },
     {
-        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:/layout/activity_timer.xml",
-        "source": "vn.edu.tlu.nhom7.calendar.app-main-7:/layout/activity_timer.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\activity_notifications.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\activity_notifications.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\activity_notifications.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\activity_notifications.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\activity_show_task.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\activity_show_task.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\fragment_weather.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\fragment_weather.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\dialog_reset_password1.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\dialog_reset_password1.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\item_task.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\item_task.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\item_timezone.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\item_timezone.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\dialog_finish_timer.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\dialog_finish_timer.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\activity_alarm.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\activity_alarm.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\activity_user_profile.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\activity_user_profile.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\activity_select_timezone.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\activity_select_timezone.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\activity_sign_up.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\activity_sign_up.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\activity_facebook.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\activity_facebook.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\fragment_calendar.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\fragment_calendar.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\activity_timezone.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\activity_timezone.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\item_event.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\item_event.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\activity_user_profile.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\activity_user_profile.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\dialog_set_time.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\dialog_set_time.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\activity_sign_up.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\activity_sign_up.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\dialog_reset_password.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\dialog_reset_password.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\dialog_set_time.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\dialog_set_time.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\activity_timer.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\activity_timer.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\activity_timer.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\activity_timer.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\activity_alarm.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\activity_alarm.xml"
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:/layout/activity_timezone.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-45:/layout/activity_timezone.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\activity_map.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\activity_map.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\activity_splash.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\activity_main_sign_up.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\activity_main_sign_up.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\dialog_finish_timer.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\dialog_finish_timer.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\fragment_task.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\fragment_task.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\activity_update_task.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\activity_update_task.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\dialog_reset_password.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\dialog_reset_password.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\activity_create_task.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\activity_create_task.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\item_event.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\item_event.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\activity_facebook.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\activity_facebook.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\fragment_task.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\fragment_task.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\activity_show_task.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\activity_show_task.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\dialog_reset_password1.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\dialog_reset_password1.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\activity_update_task.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\activity_update_task.xml"
     },
     {
-        "merged": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-4:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\kqchi\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-7:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\activity_main_sign_up.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\activity_main_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\activity_create_task.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\activity_create_task.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\activity_map.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\activity_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\fragment_calendar.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\fragment_calendar.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\item_task.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\item_task.xml"
     }
 ]

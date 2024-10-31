@@ -29,6 +29,7 @@ import vn.edu.tlu.nhom7.calendar.activity.timer.TimerActivity;
 
 import vn.edu.tlu.nhom7.calendar.activity.map.MapActivity;
 
+import vn.edu.tlu.nhom7.calendar.activity.timezone.TimezoneActivity;
 import vn.edu.tlu.nhom7.calendar.activity.user.UserProfile;
 import vn.edu.tlu.nhom7.calendar.activity.weather.WeatherFragment;
 
@@ -94,6 +95,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this, AlarmActivity.class));
         } else if (itemId == R.id.nav_map) {
             startActivity(new Intent(this, MapActivity.class));
+        } else if (itemId == R.id.nav_worldZone) {
+            startActivity(new Intent(this, TimezoneActivity.class));
         }
     }
 
