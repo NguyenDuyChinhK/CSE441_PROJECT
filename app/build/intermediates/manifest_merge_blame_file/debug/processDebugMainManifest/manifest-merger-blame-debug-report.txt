@@ -9,35 +9,35 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.VIBRATE" />
-11-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:5:5-65
-11-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:5:22-63
+11-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:5:5-65
+11-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:5:22-63
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:6:5-67
-12-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:6:22-64
+12-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:6:5-67
+12-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:6:22-64
 13    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-13-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:7:5-77
-13-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:7:22-74
+13-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:7:5-77
+13-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:7:22-74
 14    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
-14-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:8:5-79
-14-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:8:22-76
+14-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:8:5-79
+14-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:8:22-76
 15    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
-15-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:9:5-74
-15-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:9:22-71
+15-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:9:5-74
+15-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:9:22-71
 16    <uses-permission android:name="android.permission.WAKE_LOCK" />
-16-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:10:5-68
-16-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:10:22-65
+16-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:10:5-68
+16-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:10:22-65
 17    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-17-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:11:5-79
-17-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:11:22-76
+17-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:11:5-79
+17-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:11:22-76
 18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-18-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:12:5-81
-18-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:12:22-78
+18-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:12:5-81
+18-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:12:22-78
 19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-19-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:13:5-78
-19-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:13:22-76
+19-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:13:5-78
+19-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:13:22-76
 20    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-20-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:14:5-109
-20-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:14:22-77
+20-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:14:5-109
+20-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:14:22-77
 21
 22    <uses-feature
 22-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\hp\.gradle\caches\transforms-3\eb1138e56d429f51ce939c8271fc0c5a\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
@@ -105,121 +105,121 @@
 56-->[org.osmdroid:osmdroid-android:6.1.13] C:\Users\hp\.gradle\caches\transforms-3\c1451bf267077a4dbdc81514a1ced234\transformed\jetified-osmdroid-android-6.1.13\AndroidManifest.xml:25:9-33
 57
 58    <application
-58-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:16:5-92:19
+58-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:16:5-92:19
 59        android:allowBackup="true"
-59-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:17:9-35
+59-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:17:9-35
 60        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 60-->[androidx.core:core:1.13.0] C:\Users\hp\.gradle\caches\transforms-3\703eb939fa4076707b27d593adc94ba5\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 61        android:dataExtractionRules="@xml/data_extraction_rules"
-61-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:19:9-65
+61-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:19:9-65
 62        android:debuggable="true"
 63        android:extractNativeLibs="false"
 64        android:fullBackupContent="@xml/backup_rules"
-64-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:20:9-54
+64-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:20:9-54
 65        android:icon="@mipmap/ic_launcher"
-65-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:21:9-43
+65-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:21:9-43
 66        android:label="@string/app_name"
-66-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:22:9-41
+66-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:22:9-41
 67        android:networkSecurityConfig="@xml/network_security_config"
-67-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:25:9-69
+67-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:25:9-69
 68        android:roundIcon="@mipmap/ic_launcher_round"
-68-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:23:9-54
+68-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:23:9-54
 69        android:supportsRtl="true"
-69-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:24:9-35
+69-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:24:9-35
 70        android:testOnly="true"
 71        android:theme="@style/Theme.Calendar"
-71-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:26:9-46
+71-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:26:9-46
 72        android:usesCleartextTraffic="true" >
-72-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:18:9-44
+72-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:18:9-44
 73
 74        <!-- Đăng ký các receiver -->
 75        <receiver android:name="vn.edu.tlu.nhom7.calendar.activity.notification.NotificationReceiver" />
-75-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:30:9-80
-75-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:30:19-77
+75-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:30:9-80
+75-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:30:19-77
 76        <receiver android:name="vn.edu.tlu.nhom7.calendar.activity.alarm.AlarmReceiver" />
-76-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:31:9-66
-76-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:31:19-63
+76-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:31:9-66
+76-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:31:19-63
 77        <receiver android:name="vn.edu.tlu.nhom7.calendar.activity.timer.TimerActivity$NotificationReceiver" />
-77-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:32:9-87
-77-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:32:19-84
+77-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:32:9-87
+77-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:32:19-84
 78
 79        <service android:name="vn.edu.tlu.nhom7.calendar.TimerService" />
-79-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:35:9-49
-79-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:35:18-46
+79-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:35:9-49
+79-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:35:18-46
 80
 81        <!-- Đăng ký các activity -->
 82        <activity
-82-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:38:9-84
+82-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:38:9-84
 83            android:name="vn.edu.tlu.nhom7.calendar.activity.MainActivity"
-83-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:38:19-56
+83-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:38:19-56
 84            android:exported="false" />
-84-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:38:57-81
+84-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:38:57-81
 85        <activity android:name="vn.edu.tlu.nhom7.calendar.activity.alarm.AlarmActivity" />
-85-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:39:9-66
-85-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:39:19-63
+85-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:39:9-66
+85-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:39:19-63
 86        <activity android:name="vn.edu.tlu.nhom7.calendar.activity.map.MapActivity" />
-86-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:40:9-62
-86-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:40:19-59
+86-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:40:9-62
+86-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:40:19-59
 87        <activity android:name="vn.edu.tlu.nhom7.calendar.activity.timer.TimerActivity" />
-87-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:41:9-75
-87-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:41:19-63
+87-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:41:9-75
+87-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:41:19-63
 88        <activity
-88-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:43:9-45:40
+88-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:43:9-45:40
 89            android:name="vn.edu.tlu.nhom7.calendar.activity.notification.NotificationActivity"
-89-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:44:13-71
+89-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:44:13-71
 90            android:exported="false" />
-90-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:45:13-37
+90-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:45:13-37
 91        <activity
-91-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:46:9-48:40
+91-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:46:9-48:40
 92            android:name="vn.edu.tlu.nhom7.calendar.activity.notification.NotificationHelper"
-92-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:47:13-69
+92-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:47:13-69
 93            android:exported="false" />
-93-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:48:13-37
+93-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:48:13-37
 94        <activity
-94-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:49:9-51:40
+94-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:49:9-51:40
 95            android:name="vn.edu.tlu.nhom7.calendar.activity.task.CreateTaskActivity"
-95-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:50:13-61
+95-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:50:13-61
 96            android:exported="false" />
-96-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:51:13-37
+96-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:51:13-37
 97        <activity
-97-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:53:9-55:40
+97-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:53:9-55:40
 98            android:name="vn.edu.tlu.nhom7.calendar.activity.task.ShowTaskActivity"
-98-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:54:13-59
+98-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:54:13-59
 99            android:exported="false" />
-99-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:55:13-37
+99-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:55:13-37
 100        <activity
-100-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:56:9-58:40
+100-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:56:9-58:40
 101            android:name="vn.edu.tlu.nhom7.calendar.activity.task.TaskFragment"
-101-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:57:13-55
+101-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:57:13-55
 102            android:exported="false" />
-102-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:58:13-37
+102-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:58:13-37
 103        <activity
-103-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:59:9-61:40
+103-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:59:9-61:40
 104            android:name="vn.edu.tlu.nhom7.calendar.activity.task.UpdateTaskActivity"
-104-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:60:13-61
+104-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:60:13-61
 105            android:exported="false" />
-105-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:61:13-37
+105-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:61:13-37
 106        <activity
-106-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:62:9-64:40
+106-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:62:9-64:40
 107            android:name="vn.edu.tlu.nhom7.calendar.activity.user.Login"
-107-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:63:13-48
+107-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:63:13-48
 108            android:exported="false" />
-108-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:64:13-37
+108-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:64:13-37
 109        <activity
-109-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:65:9-67:40
+109-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:65:9-67:40
 110            android:name="vn.edu.tlu.nhom7.calendar.activity.user.Sign_Up"
-110-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:66:13-50
+110-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:66:13-50
 111            android:exported="false" />
-111-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:67:13-37
+111-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:67:13-37
 112        <activity
-112-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:68:9-70:40
+112-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:68:9-70:40
 113            android:name="vn.edu.tlu.nhom7.calendar.activity.user.UserProfile"
-113-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:69:13-54
+113-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:69:13-54
 114            android:exported="false" />
-114-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:70:13-37
+114-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:70:13-37
 115        <activity android:name="vn.edu.tlu.nhom7.calendar.activity.user.MainSignUp" >
-115-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:71:9-78:20
-115-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:72:13-53
+115-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:71:9-78:20
+115-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:72:13-53
 116
 117            <!-- android:exported="flase"> -->
 118            <!-- <intent-filter> -->
@@ -228,30 +228,30 @@
 121            <!-- </intent-filter> -->
 122        </activity>
 123        <activity
-123-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:79:9-87:20
+123-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:79:9-87:20
 124            android:name="vn.edu.tlu.nhom7.calendar.activity.Splash.SplashActivity"
-124-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:80:13-59
+124-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:80:13-59
 125            android:exported="true"
-125-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:81:13-36
+125-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:81:13-36
 126            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-126-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:82:13-69
+126-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:82:13-69
 127            <intent-filter>
-127-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:83:13-86:29
+127-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:83:13-86:29
 128                <action android:name="android.intent.action.MAIN" />
-128-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:84:17-69
-128-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:84:25-66
+128-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:84:17-69
+128-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:84:25-66
 129
 130                <category android:name="android.intent.category.LAUNCHER" />
-130-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:85:17-77
-130-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:85:27-74
+130-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:85:17-77
+130-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:85:27-74
 131            </intent-filter>
 132        </activity>
 133        <activity android:name="vn.edu.tlu.nhom7.calendar.activity.timezone.TimezoneActivity" />
-133-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:89:9-82
-133-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:89:19-69
+133-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:89:9-82
+133-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:89:19-69
 134        <activity android:name="vn.edu.tlu.nhom7.calendar.activity.timezone.SelectTimezoneActivity" />
-134-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:90:9-88
-134-->D:\android\btc\CSE441_PROJECT\app\src\main\AndroidManifest.xml:90:19-75
+134-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:90:9-88
+134-->D:\android\btta\CSE441_PROJECT\app\src\main\AndroidManifest.xml:90:19-75
 135        <activity
 135-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\hp\.gradle\caches\transforms-3\de7ad51a1854cc623dbe2662169c0a8a\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:29:9-46:20
 136            android:name="com.google.firebase.auth.internal.GenericIdpActivity"

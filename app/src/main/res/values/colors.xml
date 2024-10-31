@@ -10,7 +10,8 @@
     <color name="messes_done">#70FF00</color>
     <color name="color_hightlighBlue">#735bf2</color>
     <color name="color_hightlighGreen">#00b383</color>
-    <color name="color_hightlighRed">#BA1B1B</color>
+    <color name="color_hightlighRed">#D62525</color>
     <color name="color_hightlighYellow">#A1A13C</color>
     <color name="color_hightlighEvent">#FF8400</color>
+    <color name="color_purple">#8583FD</color>
 </resources>

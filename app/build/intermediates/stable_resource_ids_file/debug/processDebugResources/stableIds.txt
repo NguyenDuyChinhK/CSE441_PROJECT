@@ -2144,6 +2144,7 @@ vn.edu.tlu.nhom7.calendar:attr/fabSize = 0x7f0401dd
 vn.edu.tlu.nhom7.calendar:macro/m3_comp_filled_button_container_color = 0x7f0d0043
 vn.edu.tlu.nhom7.calendar:attr/removeEmbeddedFabElevation = 0x7f0403c1
 vn.edu.tlu.nhom7.calendar:dimen/m3_comp_slider_active_handle_leading_space = 0x7f070184
+vn.edu.tlu.nhom7.calendar:color/color_purple = 0x7f060324
 vn.edu.tlu.nhom7.calendar:drawable/design_ic_visibility_off = 0x7f0800a8
 vn.edu.tlu.nhom7.calendar:layout/mtrl_search_bar = 0x7f0c007c
 vn.edu.tlu.nhom7.calendar:macro/m3_comp_navigation_drawer_inactive_icon_color = 0x7f0d008c

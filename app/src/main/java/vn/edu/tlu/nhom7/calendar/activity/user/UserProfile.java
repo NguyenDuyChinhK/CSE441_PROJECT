@@ -101,8 +101,7 @@ public class UserProfile extends AppCompatActivity {
         firebaseFirestore = FirebaseFirestore.getInstance();
         storageReference = FirebaseStorage.getInstance().getReference();
 
-//        Intent intent = getIntent();
-//        String userID = intent.getStringExtra("userID");
+
 
         Intent intent = getIntent();
         String photoUrl = intent.getStringExtra("photoUrl");

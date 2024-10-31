@@ -1,4 +1,3 @@
-// SplashActivity.java
 package vn.edu.tlu.nhom7.calendar.activity.Splash;
 
 import android.content.Intent;
@@ -16,11 +15,10 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        // Chuyển đến MainActivity sau 3 giây
         new Handler().postDelayed(() -> {
             Intent intent = new Intent(SplashActivity.this, MainSignUp.class);
             startActivity(intent);
             finish();
-        }, 3000); // 3000ms = 3 giây
+        }, 3000);
     }
 }

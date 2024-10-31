@@ -1433,6 +1433,7 @@ int color color_hightlighEvent 0x7f060035
 int color color_hightlighGreen 0x7f060036
 int color color_hightlighRed 0x7f060037
 int color color_hightlighYellow 0x7f060038
+int color color_purple 0x7f060324
 int color common_google_signin_btn_text_dark 0x7f060039
 int color common_google_signin_btn_text_dark_default 0x7f06003a
 int color common_google_signin_btn_text_dark_disabled 0x7f06003b

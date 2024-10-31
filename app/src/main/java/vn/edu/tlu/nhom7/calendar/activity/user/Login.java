@@ -127,7 +127,7 @@ public class Login extends AppCompatActivity {
             return insets;
         });
 
-// Face book
+
 
 
         mapping();

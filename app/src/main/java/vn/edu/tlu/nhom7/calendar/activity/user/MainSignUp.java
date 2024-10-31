@@ -82,15 +82,12 @@ public class MainSignUp extends AppCompatActivity {
     private static  final int RC_SIGN_IN = 40;
     GoogleSignInClient googleSignInClient;
     ShapeableImageView imageView;
-    //    private CallbackManager mcallbackManager;
     private FirebaseAuth.AuthStateListener authStateListener;
-//    private AccessTokenTracker accessTokenTracker;
 
 
 
 
     private void Mapping(){
-//        btn_Facebook = findViewById(R.id.btn_Facebook_SU);
         btn_PhoneNumber = findViewById(R.id.btn_Phone_SU);
         btn_Google = findViewById(R.id.imbtn_google);
         btn_Google = findViewById(R.id.imbtn_google);

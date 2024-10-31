@@ -7,6 +7,7 @@ color color_hightlighEvent
 color color_hightlighGreen
 color color_hightlighRed
 color color_hightlighYellow
+color color_purple
 color end_color
 color messes_done
 color messes_err

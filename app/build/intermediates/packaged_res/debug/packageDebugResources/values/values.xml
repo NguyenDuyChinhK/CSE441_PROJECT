@@ -14,6 +14,7 @@
     <color name="color_hightlighGreen">#00b383</color>
     <color name="color_hightlighRed">#BA1B1B</color>
     <color name="color_hightlighYellow">#A1A13C</color>
+    <color name="color_purple">#8583FD</color>
     <color name="end_color">#FFFFFFFF</color>
     <color name="messes_done">#70FF00</color>
     <color name="messes_err">#FF0000</color>

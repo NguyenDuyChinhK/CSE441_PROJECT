@@ -1434,6 +1434,7 @@ color color_hightlighEvent
 color color_hightlighGreen
 color color_hightlighRed
 color color_hightlighYellow
+color color_purple
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
 color common_google_signin_btn_text_dark_disabled

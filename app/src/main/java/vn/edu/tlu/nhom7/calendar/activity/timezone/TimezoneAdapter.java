@@ -18,19 +18,16 @@ public class TimezoneAdapter extends ArrayAdapter<TimezoneInfo> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        // Kiểm tra xem view có cần tái sử dụng không
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_timezone, parent, false);
         }
 
-        // Lấy dữ liệu cho vị trí hiện tại
+
         TimezoneInfo timezoneInfo = getItem(position);
 
-        // Thiết lập TextView cho tên thành phố và thời gian
         TextView cityTextView = convertView.findViewById(R.id.cityTextView);
         TextView timeTextView = convertView.findViewById(R.id.timeTextView);
 
-        // Hiển thị dữ liệu
         cityTextView.setText(timezoneInfo.getCity());
         timeTextView.setText(timezoneInfo.getCurrentTime());
 

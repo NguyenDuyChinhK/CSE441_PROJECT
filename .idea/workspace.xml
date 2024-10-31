@@ -161,7 +161,22 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3a85cd8-1d06-46a3-9743-e5177fc87f1b" name="Changes" comment="" />
+    <list default="true" id="f3a85cd8-1d06-46a3-9743-e5177fc87f1b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/processDebugResources/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/processDebugResources/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/edu/tlu/nhom7/calendar/activity/Splash/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/vn/edu/tlu/nhom7/calendar/activity/Splash/SplashActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/edu/tlu/nhom7/calendar/activity/timezone/SelectTimezoneActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/vn/edu/tlu/nhom7/calendar/activity/timezone/SelectTimezoneActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/edu/tlu/nhom7/calendar/activity/timezone/TimezoneActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/vn/edu/tlu/nhom7/calendar/activity/timezone/TimezoneActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/edu/tlu/nhom7/calendar/activity/timezone/TimezoneAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/vn/edu/tlu/nhom7/calendar/activity/timezone/TimezoneAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/edu/tlu/nhom7/calendar/activity/user/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/vn/edu/tlu/nhom7/calendar/activity/user/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/edu/tlu/nhom7/calendar/activity/user/MainSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/vn/edu/tlu/nhom7/calendar/activity/user/MainSignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/edu/tlu/nhom7/calendar/activity/user/Sign_Up.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/vn/edu/tlu/nhom7/calendar/activity/user/Sign_Up.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/edu/tlu/nhom7/calendar/activity/user/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/vn/edu/tlu/nhom7/calendar/activity/user/UserProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -246,7 +261,7 @@
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/android/btc/CSE441_PROJECT/app/src/main/res/drawable",
+    "last_opened_file_path": "D:/android/btta/CSE441_PROJECT",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>

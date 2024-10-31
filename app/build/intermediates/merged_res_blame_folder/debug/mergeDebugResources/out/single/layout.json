@@ -52,10 +52,6 @@
         "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\activity_timer.xml"
     },
     {
-        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:/layout/activity_timezone.xml",
-        "source": "vn.edu.tlu.nhom7.calendar.app-main-45:/layout/activity_timezone.xml"
-    },
-    {
         "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\activity_splash.xml",
         "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\activity_splash.xml"
     },
@@ -90,6 +86,10 @@
     {
         "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\activity_main_sign_up.xml",
         "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-main-45:\\layout\\activity_main_sign_up.xml"
+    },
+    {
+        "merged": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:/layout/activity_user_profile.xml",
+        "source": "vn.edu.tlu.nhom7.calendar.app-main-45:/layout/activity_user_profile.xml"
     },
     {
         "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-42:\\layout\\activity_create_task.xml",
