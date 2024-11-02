@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-41:/values-ldltr-v21/values-ldltr-v21.xml",
+            "outputFile": "vn.edu.tlu.nhom7.calendar.app-mergeDebugResources-3:/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\b3e0350f732dcba2e4bc8427a0c64963\\transformed\\appcompat-1.6.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "source": "C:\\Users\\kqchi\\.gradle\\caches\\transforms-3\\b3e0350f732dcba2e4bc8427a0c64963\\transformed\\appcompat-1.6.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

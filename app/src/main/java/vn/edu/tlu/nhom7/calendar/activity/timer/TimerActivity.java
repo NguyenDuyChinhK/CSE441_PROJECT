@@ -45,6 +45,7 @@ public class TimerActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        // Các thành phần giao diện người dùng
         tvTimer = findViewById(R.id.tv_timer);
         btnPlay = findViewById(R.id.btn_play);
         btnPause = findViewById(R.id.btn_pause);

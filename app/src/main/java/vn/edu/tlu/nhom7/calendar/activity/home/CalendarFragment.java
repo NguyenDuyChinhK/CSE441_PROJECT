@@ -84,7 +84,7 @@ public class CalendarFragment extends Fragment {
             public void onDateSelected(@NonNull MaterialCalendarView widget, @NonNull CalendarDay date, boolean selected) {
                 selectedDate = date;
                 updateDateTextViews(selectedDate);
-                updateEventListForSelectedMonth(selectedDate);
+                updateEventListForSelectedDate(selectedDate);
                 calendar.invalidateDecorators();
             }
         });
@@ -96,7 +96,8 @@ public class CalendarFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(eventAdapter);
 
-        updateEventListForSelectedMonth(selectedDate);
+        updateEventListForSelectedDate(selectedDate);
+
 
         try {
             highlightDates(eventList);
@@ -155,52 +156,59 @@ public class CalendarFragment extends Fragment {
         eventList.add(new Event("27/07", "Ngày Thương binh liệt sĩ"));
         eventList.add(new Event("19/08", "Ngày Cách mạng tháng Tám thành công"));
         eventList.add(new Event("02/09", "Ngày Quốc khánh"));
+        eventList.add(new Event("07/09", "Ngày thành lập Đài Truyền hình Việt Nam"));
         eventList.add(new Event("10/10", "Ngày Giải phóng Thủ đô"));
+        eventList.add(new Event("13/10", "Ngày Doanh nhân Việt Nam"));
+        eventList.add(new Event("14/10", "Ngày thành lập Hội Nông dân Việt Nam"));
         eventList.add(new Event("20/10", "Ngày Phụ nữ Việt Nam"));
         eventList.add(new Event("20/11", "Ngày Nhà giáo Việt Nam"));
-        eventList.add(new Event("22/12", "Ngày thành lập Quân đội Nhân dân Việt Nam"));
+        eventList.add(new Event("24/12", "Đêm Giáng sinh"));
+        eventList.add(new Event("25/12", "Lễ Giáng Sinh"));
     }
 
     private void loadLunarEventData() {
         lunarEventList = new ArrayList<>();
-        lunarEventList.add(new Event("15/1", "Tết Nguyên Tiêu (Âm lịch)"));
-        lunarEventList.add(new Event("3/3", "Tết Hàn Thực (Âm lịch)"));
-        lunarEventList.add(new Event("15/4", "Lễ Phật Đản (Âm lịch)"));
-        lunarEventList.add(new Event("5/5", "Tết Đoan Ngọ (Âm lịch)"));
-        lunarEventList.add(new Event("15/7", "Tết Trung nguyên / Lễ Vu-lan (Âm lịch)"));
-        lunarEventList.add(new Event("15/8", "Tết Trung Thu (Âm lịch)"));
         lunarEventList.add(new Event("23/12", "Ngày Đưa Ông Táo Về Trời (Âm lịch)"));
+        lunarEventList.add(new Event("01/01", "Tết Nguyên đán (Âm lịch)"));
+        lunarEventList.add(new Event("02/01", "Tết Nguyên đán (Âm lịch)"));
+        lunarEventList.add(new Event("03/01", "Tết Nguyên đán (Âm lịch)"));
+        lunarEventList.add(new Event("15/01", "Tết Nguyên Tiêu (Âm lịch)"));
+        lunarEventList.add(new Event("03/03", "Tết Hàn Thực (Âm lịch)"));
+        lunarEventList.add(new Event("10/03", "Giỗ tổ Hùng Vương (Âm lịch)"));
+        lunarEventList.add(new Event("15/04", "Lễ Phật Đản (Âm lịch)"));
+        lunarEventList.add(new Event("05/05", "Tết Đoan Ngọ (Âm lịch)"));
+        lunarEventList.add(new Event("15/07", "Tết Trung nguyên / Lễ Vu-lan (Âm lịch)"));
+        lunarEventList.add(new Event("15/08", "Tết Trung Thu (Âm lịch)"));
+
     }
 
-    private void updateEventListForSelectedMonth(CalendarDay date) {
-        int selectedMonth = date.getMonth() + 1;
+
+    private void updateEventListForSelectedDate(CalendarDay date) {
+        String selectedDay = String.format("%02d/%02d", date.getDay(), date.getMonth() + 1);
         filteredEventList.clear();
 
-
+        // Lọc sự kiện dương lịch
         for (Event event : eventList) {
-            String[] parts = event.getDate().split("/");
-            int eventMonth = Integer.parseInt(parts[1]);
-            if (eventMonth == selectedMonth) {
+            if (event.getDate().equals(selectedDay)) {
                 filteredEventList.add(event);
             }
         }
 
-
+        // Lọc sự kiện âm lịch
         for (Event lunarEvent : lunarEventList) {
-            String lunarDate = lunarEvent.getDate();
-            Calendar lunarCalendar = convertLunarToSolar(lunarDate, date.getYear());
+            // Chuyển đổi ngày âm lịch sang dương lịch
+            Calendar lunarCalendar = convertLunarToSolar(lunarEvent.getDate(), date.getYear());
 
             if (lunarCalendar != null) {
+                // So sánh với ngày đã chọn
                 CalendarDay lunarCalendarDay = CalendarDay.from(lunarCalendar);
-                int lunarEventMonth = lunarCalendarDay.getMonth() + 1;
-
-
-                if (lunarEventMonth == selectedMonth) {
+                if (lunarCalendarDay.equals(date)) {
                     filteredEventList.add(lunarEvent);
                 }
             }
         }
 
+        // Cập nhật danh sách sự kiện trên UI
         eventAdapter.notifyDataSetChanged();
     }
 
@@ -209,8 +217,15 @@ public class CalendarFragment extends Fragment {
         int lunarDay = Integer.parseInt(parts[0]);
         int lunarMonth = Integer.parseInt(parts[1]);
 
+        // Kiểm tra năm âm lịch hợp lệ
+        if (year < 1900 || year > 2100) {
+            Log.e("Lunar Conversion", "Invalid year: " + year);
+            throw new IllegalArgumentException("Năm không hợp lệ");
+        }
 
+        // Kiểm tra ngày và tháng âm lịch hợp lệ
         if (lunarDay < 1 || lunarDay > 30 || lunarMonth < 1 || lunarMonth > 12) {
+            Log.e("Lunar Conversion", "Invalid lunar date: " + lunarDate);
             throw new IllegalArgumentException("Ngày hoặc tháng âm không hợp lệ");
         }
 
@@ -219,14 +234,15 @@ public class CalendarFragment extends Fragment {
         chineseCalendar.set(ChineseCalendar.MONTH, lunarMonth - 1);
         chineseCalendar.set(ChineseCalendar.DAY_OF_MONTH, lunarDay);
 
+        // Tạo lịch dương
         Calendar solarCalendar = Calendar.getInstance();
         solarCalendar.setTimeInMillis(chineseCalendar.getTimeInMillis());
 
 
-        Log.d("Converted Date", "Lunar Date: " + lunarDate + " => Solar Date: " + solarCalendar.getTime());
-
         return solarCalendar;
     }
+
+
 
 
     private void highlightDates(List<Event> eventList) throws ParseException {
@@ -269,10 +285,10 @@ public class CalendarFragment extends Fragment {
                 CalendarDay calendarDay = CalendarDay.from(lunarDate);
                 CurrentDayDecorator decorator = new CurrentDayDecorator(lunarDate, color);
                 calendar.addDecorator(decorator);
+
             }
         }
     }
 
 }
-
 
